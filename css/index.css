@@ -183,8 +183,6 @@ header nav ul li a:hover {
 
 header img {
   height: 30px;
-
-  /* padding: 5px; */
 }
 
 /* Home Styles */
@@ -257,12 +255,12 @@ header img {
 }
 
 .section-4 h2 {
-  margin: 25px;
+  margin: 40px 0;
 }
 
 .section-4 address {
   font-size: 1em;
-  margin: 25px;
+  margin: 25px 0;
   line-height: 2.5em;
 }
 
@@ -340,7 +338,6 @@ footer {
 
 .services-3 div h2 {
   font-size: 1.1em;
-  /* margin: 10px 0; */
 }
 
 .services-3 div p {
@@ -356,6 +353,10 @@ footer {
   list-style: square;
 }
 
+.section-4 h2 {
+  margin: 50px 25px 25px 0;
+}
+
 /* Tablet View */
 @media (max-width: 800px) {
   .container {
@@ -367,11 +368,15 @@ footer {
     flex-direction: column-reverse;
   }
 
+  header img {
+    margin: 10px 0;
+  }
+
   header nav ul {
     justify-content: space-between;
     align-items: center;
   }
-  
+
   header nav ul li a {
     padding: 0 10px;
   }
@@ -382,27 +387,56 @@ footer {
     align-items: center;
   }
 
-  .section-1 div {
-    align-items: center;
-    text-align: center;
-    margin: 0 auto;
-  }
-
   .section-1 img {
     display: none;
-  }
-
-  .section-4 h2 {
-    margin: 25px 25px 25px 0;
-  }
-
-  .section-4 address {
-    font-size: 1em;
-    margin: 25px 25px 25px 0;
-    line-height: 2.5em;
   }
 }
 
 @media (max-width: 500px) {
-  header nav ul
+  header {
+    height: 400px;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+
+  header nav ul {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  header nav ul li {
+    width: 100%;
+    padding: 20px 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+
+  header nav ul li a {
+    margin: 0;
+    width: 100%;
+    padding: 20px 125px;
+  }
+
+  header nav ul li:hover {
+    background: black;
+  }
+
+  header nav ul li a:hover {
+    color: white;
+  }
+
+  .section-2 {
+    flex-direction: column;
+  }
+
+  .section-3 {
+    flex-direction: column;
+  }
+
+  .section-3 div {
+    width: 100%;
+  }
 }
